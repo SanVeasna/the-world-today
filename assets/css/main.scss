@@ -1,0 +1,16 @@
+@use "variables" as globalVariable;
+
+*{
+    font-family: globalVariable.$font-khmer,globalVariable.$font-en;
+}
+*,html,body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#__nuxt{
+    // margin: 8px;
+    // padding: 8px;
+    padding-top: 0;
+    margin-top: 0;
+}

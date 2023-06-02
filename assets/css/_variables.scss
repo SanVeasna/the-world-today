@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'kantumruy';
+    src: url('./../font/Kantumruy-Regular.ttf');
+}
+@font-face {
+    font-family: 'kantumruy-bold';
+    src: url('./../font/Kantumruy-Bold.ttf');
+}
+@font-face {
+    font-family: 'hanuman';
+    src: url('./../font/Hanuman-Regular.ttf');
+}
+@font-face {
+    font-family: 'hanuman-bold';
+    src: url('./../font/Hanuman-Bold.ttf');
+}
+@font-face {
+    font-family: 'poppin';
+    src: url('./../font/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'poppin-bold';
+    src: url('./../font/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: 'kodchasan-regular';
+    src: url('./../font/Kodchasan-Regular.ttf');
+}
+@font-face {
+    font-family: 'kodchasan-bold';
+    src: url('./../font/Kodchasan-Bold.ttf');
+}
+// color template
+$primary-color:'';
+$secondary-color:'';
+
+//font size
+$font-size-standard:14;
+
+//font family
+$font-khmer:'kantumruy';
+$font-en:'poppin';
+$font-hanuman:"hanuman";
+$font-khmer-bold:'kantumruy-bold';
+$font-en-bold:'poppin-bold';
+$font-hanuman-bold:'hanuman-bold';
+
+@mixin variables{
+    font-size: $font-size-standard;
+}
