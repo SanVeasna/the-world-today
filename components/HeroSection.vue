@@ -23,7 +23,7 @@
                 </div>
                 <div class="slide-item h-auto flex-grow-0 flex-shrink-0 lmd:h-40">
                     <div class="slide-image rounded-sm overflow-hidden">
-                        <img src="~/assets/image/iphone15-banner.webp">
+                        <img src="~/assets/image/boxing.jpg">
                     </div>
                     <div class="slide-content">
                         <div class="text-bg">
