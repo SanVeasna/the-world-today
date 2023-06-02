@@ -2,7 +2,7 @@
     <div id="container">
         <div class="item">
             <div class="image rounded-sm overflow-hidden">
-                <img :src="`/the-world-today/_nuxt/${imagePath}`"/>
+                <img :src="`@/assets/image/${imagePath}`"/>
             </div>
             <div class="item-content">
                 <div class="published_date">{{ publishedDate }}</div>

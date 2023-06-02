@@ -4,7 +4,7 @@
     data-aos-easing="ease-in-out-cubic" @click="onClickCard">
         <div class="image_section">
             <div class="image">
-                <img :src="`/the-world-today/_nuxt/${imagePath}`"/>
+                <img :src="`@/assets/image/${imagePath}`"/>
             </div>
         </div>
         <div class="card-content p-3">
