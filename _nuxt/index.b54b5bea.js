@@ -1,1 +1,0 @@
-import{a as e,o as n,b as c,e as r}from"./entry.58431c74.js";const s={};function a(o,t){return n(),c("div",null,"Hello")}const l=e(s,[["render",a]]),d={};function f(o,t){const _=l;return n(),c("div",null,[r(_)])}const u=e(d,[["render",f]]);export{u as default};
