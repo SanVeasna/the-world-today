@@ -1,4 +1,7 @@
 <template>
+    <div>Hi</div>
+    <ins data-revive-zoneid="174" data-revive-id="4ff484e57e8020025aee8261064e4569"></ins>
+    <component is="script" async src="//ads1.damrei.digital/www/delivery/asyncjs.php"></component>
     <div id="page_container">
         <div id="content_page">
             <div class="gategory-title">Technology</div>
@@ -21,6 +24,7 @@ const route=useRoute();
 
 onMounted(()=>{
     title.value=route.query['title']??'No title';
+    if (window.reviveAsync) window.reviveAsync["4ff484e57e8020025aee8261064e4569"].apply(window.reviveAsync["4ff484e57e8020025aee8261064e4569"].detect())
 })
 
 </script>

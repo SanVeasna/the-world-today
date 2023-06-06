@@ -4,16 +4,18 @@
     data-aos-easing="ease-in-out-cubic" @click="onClickCard">
         <div class="image_section">
             <div class="image">
-                <img :src="`/the-world-today/_nuxt/assets/image/${imagePath}`"/>
+                <img :src=article.imagePath />
             </div>
         </div>
         <div class="card-content p-3">
-            <div class="">
-                <div class="date-publish"><Icon icon="mdi:calendar-month" style="margin-bottom: 2px;" width="14px" height="14px"/><span>{{ datePublish }}</span></div>
-                <div class="card-title">{{ title }}</div>
+            <div class="h-full flex flex-col justify-between">
+                <div>
+                    <div class="date-publish"><Icon icon="mdi:calendar-month" style="margin-bottom: 2px;" width="14px" height="14px"/><span>{{ new Date(article.date_created).toLocaleDateString() }}</span></div>
+                    <div class="card-title">{{ article.title }}</div>
+                </div>
                 <div class="card-status">
                     <div class="publish-by flex gap-1 items-center"><Icon class="mb-1" icon="mdi-light:account" width="16px" height="16px"/>By<span class="text-primary-orange"> The World Tody</span></div>
-                    <div class="view"><Icon icon="mdi:eye-outline" width="14px" height="14px"/><span>{{ view }}K</span></div>
+                    <div class="view"><Icon icon="mdi:eye-outline" width="14px" height="14px"/><span>10K</span></div>
                 </div>
             </div>
             <!-- <div class="card-desc">
@@ -25,25 +27,8 @@
 <script lang="ts" setup>
 import { Icon } from '@iconify/vue';
 defineProps({
-    imagePath:{
-        type:String,
-        required:true,
-        default:''
-    },
-    title:{
-        type:String,
-        required:true
-    },
-    description:{
-        type:String,
-        required:true
-    },
-    datePublish:{
-        type:String,
-        required:true
-    },
-    view:{
-        type:String,
+    article:{
+        type:Object,
         required:true
     }
 });
